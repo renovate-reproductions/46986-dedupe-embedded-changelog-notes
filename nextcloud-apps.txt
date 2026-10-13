@@ -1,2 +1,3 @@
 calendar@5.5.0
 calendar@5.5.5
+contacts@7.3.0
