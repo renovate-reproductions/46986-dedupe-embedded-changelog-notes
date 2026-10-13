@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^nextcloud-apps\\.txt$/"],
+      "matchStrings": ["(?<depName>[a-z_]+)@(?<currentValue>\\S+)"],
+      "datasourceTemplate": "nextcloud",
+      "versioningTemplate": "semver"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["nextcloud"],
+      "groupName": "nextcloud apps"
+    }
+  ]
+}
