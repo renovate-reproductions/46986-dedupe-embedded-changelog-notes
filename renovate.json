@@ -13,7 +13,15 @@
   "packageRules": [
     {
       "matchDatasources": ["nextcloud"],
+      "registryUrls": [
+        "https://apps.nextcloud.com/api/v1/platform/30.0.0/apps.json"
+      ],
       "groupName": "nextcloud apps"
+    },
+    {
+      "matchDatasources": ["nextcloud"],
+      "matchPackageNames": ["calendar"],
+      "allowedVersions": "<=5.5.9"
     }
   ]
 }
